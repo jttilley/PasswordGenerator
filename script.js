@@ -11,12 +11,15 @@ function writePassword() {
 }
 
 function generatePassword() {
+  // define arrays
   var lCase = ["q","w","e","r","t","y","u","i","o","p","s","a","d","f","g","h","j","k","l","z","x","c","v","b","n","m"];
+  
   var uCase = ["Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"];
+  
   var nums = ["1","2","3","4","5","6","7","8","9","0"];
-  var spChars = [" ","!","@","#","$","%","^","&","*","(",")","_","+","-","=","[","]","{","}","\\","|",":",";","<",">","?",",",".","/","`","~","'"];
-  var pwLength = 0;
-
+  
+  var spChars = [" ","!","@","#","$","%","^","&","*","(",")","_","+","-","=","[","]","{","}","\\","|",":",";","<",">","?",",",".","/","`","~","'","\""];
+  
   var finalList = [];
   var password = "";
 
@@ -27,7 +30,6 @@ function generatePassword() {
     if (pwLength === null) {
       return "";
     }
-
   } while (pwLength < 8 || pwLength > 128);
 
 
